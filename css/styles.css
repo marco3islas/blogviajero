@@ -1,0 +1,272 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+        font-family: 'Quattrocento Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 15px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.boton {
+  background-color: #00b8E4;
+  border-radius: 100px;
+  box-shadow: 2px 1px 3px grey;
+  color: #FFF;
+  display: inline-block;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  padding: 10px 60px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 300ms ease-in-out;
+}
+
+.boton:hover {
+  background-color: #eda400;
+  box-shadow: 0 0 2px grey;
+  border-radius: 0;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.site-header {
+  padding: 2rem 0;
+}
+
+/* Navegacion */
+.barra {
+  background-color: #DB008D;
+  margin-bottom: 2rem;
+}
+
+.navegacion-principal a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Fredoka One, cursive;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem;
+  transition: 500ms;
+  text-decoration: none;
+}
+
+@media(max-width: 600px) {
+  .navegacion-principal {
+    display: none;
+  }
+
+  .fa-bars {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: white;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+
+  #nav:target {
+    display: block;
+  }
+
+  .fa-times {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: white;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  }
+
+  .fa-times:target {}
+}
+
+@media(min-width: 600px) {
+  .navegacion-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .movil-menu {
+    display: none;
+  }
+  .hideMenu {
+    display: none;
+  }
+}
+
+.navegacion-principal a:hover {
+  background-color: #00b8E4;
+}
+
+/* Contenedores Princiales */
+.contenido-principal, .siebar {
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-principal {
+    width: 60%;
+    float: left;
+    padding: 0 6rem 0 0;
+  }
+
+  .sidebar {
+    width: 35%;
+    float: right;
+    padding: 0;
+  }
+}
+
+/* Entradas de Blog */
+h2 {
+  color: #00b8E4;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+
+}
+
+.entrada {
+  margin-bottom: 10%;
+}
+
+.entrada:last-of-type {
+  margin-bottom: 0
+}
+
+.entrada img {
+  display: block;
+}
+
+@media (min-width: 480px) {
+  .entrada img {
+    width: 300px;
+    float: left;
+    margin: 0 30px 20px 0;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  margin-left: 1%;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 2rem;
+  padding: 10px 10px 10px 0;
+}
+
+.sidebar li:hover {
+  background-color: #00b8E4;
+}
+
+.sidebar ul li a {
+  color: #00b8E4;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover, .footer-sitio h2, .footer-sitio p, .footer-sitio a {
+  color: #FFF;
+}
+/*Nosotros*/
+
+.slider {
+  width: 70%;
+}
+/*Blog*/
+
+.grid{
+  border: solid 1px gray;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  max-width: 1200px;
+
+}
+
+.gridItem{
+  border: 1px solid rgba(192, 201, 200, 0.9);
+  border-radius: 8px;
+  margin: 2px;
+  padding: 5px;
+}
+
+
+
+
+
+/* FOOTER */
+.footer-sitio {
+  background-color: #DB008D;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer-sitio a {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.footer-sitio a:last-of-type {
+  margin-right: 0;
+}
+
+.nosotros {
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-sitio .nosotros {
+    float: left;
+    width: 30%;
+    text-align: left;
+  }
+
+  .footer-sitio .menu {
+    float: right;
+    width: 60%;
+    text-align: right;
+  }
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  background-color: rgb(131, 3, 86);
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
