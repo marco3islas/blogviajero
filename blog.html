@@ -1,120 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/styles.css">
-  <!--Awesome FONTS-->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!--GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Quattrocento+Sans&display=swap" rel="stylesheet">
-  <!--Jquery-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <title>Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Awesome FONTS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!--GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Quattrocento+Sans&display=swap" rel="stylesheet">
+    <!--Jquery-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <title>Blog</title>
 </head>
+
 <body>
-  <!--cabecera-->
-  <header class="site-header contenedor">
-      <img src="img/logo.png" alt="Logotipo de Blog Viajero">
-  </header>
-  <div class="barra">
-     <a href="#nav" class="movile-menu hideMenu">
-       <span class="fas fa-bars"></span>
-      </a>
-      <nav id="nav" class="navegacion-principal contenedor">
-          <a href="index.html">inicio</a>
-          <a href="nosotros.html">nosotros</a>
-          <a href="blog.html">blog</a>
-          <a href="tienda.html">tienda</a>
-          <a href="contacto.html">contacto</a>
-      </nav>
-      <a href="">
-      <span id="#" class="fas fa-times hideMenu"></span>
-    </a>
-  </div>
-  <!--Cuerpo-->
-  <div class="contenedor">
-    <h2>Tips para viajar ...</h2>
-      <!--Inicia grid-->
-    <div class="grid">
-      <div class="gridItem">
-        <div class="foto">
-              <img src="img/entrada1.jpg" alt="Selfi con camara">
-        </div>
-        <div class="img/entrada item2">
-          <h4>Titulo1</h4>
-              Amet, consectetur adipisicing elit. Beatae a eum dolore, ducimus quis sapiente obcaecati ab assumenda? Aspernatur ad, minima esse ipsam rerum explicabo fuga sunt perspiciatis debitis inventore!
-        </div>
-        </div>
-        <div class="gridItem">
-          <div class="foto">
-              <img src="img/entrada2.jpg" alt="Cascada">
-          </div>
-          <div class="entrada item2">
-            <h4>Titulo2</h4>
-            Adipisicing elit. Aspernatur mollitia ut necessitatibus, quibusdam inventore molestias commodi, id nulla ducimus omnis quaerat porro ex fugiat soluta reiciendis perspiciatis sed sit dolor?
-          </div>
-          </div>
-          <div class="gridItem">
-            <div class="foto">
-                <img src="img/entrada3.jpg" alt="Fotos de diferentes lugares">
+    <!--cabecera-->
+    <header class="site-header contenedor">
+        <img src="img/logo.png" alt="Logotipo de Blog Viajero">
+    </header>
+    <div class="barra">
+        <a class="movile-menu hideMenu">
+            <span class="fas fa-bars"></span>
+        </a>
+        <a id="esconderMenu" class="esconder">
+            <span class="fas fa-times hideMenu"></span>
+        </a>
+        <nav id="nav" class="navegacion-principal contenedor esconder">
+            <a href="index.html">inicio</a>
+            <a id="subNivel" class="subNivel" href="nosotros.html">nosotros <span class="fa fa-caret-down" aria-hidden="true"></span>
+        </a>
+            <div class="subMenu">
+                <a href="#">Mision</a>
+                <a href="#">Vision</a>
+                <a href="#">Valores</a>
             </div>
-            <div class="entrada item2">
-              <h4>Titulo3</h4>
-              Autem, iure ut quia deleniti quasi odit, dolorum a eum doloribus, fugiat excepturi. Delectus praesentium quod id, et, facere dicta itaque.
+
+            <a id="subNivel2" class="subNivel" href="blog.html">blog <span class="fa fa-caret-down" aria-hidden="true"></span> </a>
+            <div class="subMenu2">
+                <a href="#">Consejos</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Promociones</a>
             </div>
+            <a href="#">tienda</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+    </div>
+    <!--Cuerpo-->
+    <div class="contenedor">
+        <h2>Tips para viajar ...</h2>
+        <!--Inicia grid-->
+        <div class="grid">
+            <div class="gridItem">
+                <div class="foto">
+                    <img src="img/entrada1.jpg" alt="Selfi con camara">
+                </div>
+                <div class="img/entrada item2">
+                    <h4>Titulo1</h4>
+                    Amet, consectetur adipisicing elit. Beatae a eum dolore, ducimus quis sapiente obcaecati ab assumenda? Aspernatur ad, minima esse ipsam rerum explicabo fuga sunt perspiciatis debitis inventore!
+                </div>
             </div>
             <div class="gridItem">
-              <div class="foto">
-                  <img src="img/entrada4.jpg" alt="Persona tomando foto en una loma">
-              </div>
-              <div class="entrada item2">
-                <h4>Titulo4</h4>
-                Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </div>
-              </div>
-              <div class="gridItem">
+                <div class="foto">
+                    <img src="img/entrada2.jpg" alt="Cascada">
+                </div>
+                <div class="entrada item2">
+                    <h4>Titulo2</h4>
+                    Adipisicing elit. Aspernatur mollitia ut necessitatibus, quibusdam inventore molestias commodi, id nulla ducimus omnis quaerat porro ex fugiat soluta reiciendis perspiciatis sed sit dolor?
+                </div>
+            </div>
+            <div class="gridItem">
+                <div class="foto">
+                    <img src="img/entrada3.jpg" alt="Fotos de diferentes lugares">
+                </div>
+                <div class="entrada item2">
+                    <h4>Titulo3</h4>
+                    Autem, iure ut quia deleniti quasi odit, dolorum a eum doloribus, fugiat excepturi. Delectus praesentium quod id, et, facere dicta itaque.
+                </div>
+            </div>
+            <div class="gridItem">
+                <div class="foto">
+                    <img src="img/entrada4.jpg" alt="Persona tomando foto en una loma">
+                </div>
+                <div class="entrada item2">
+                    <h4>Titulo4</h4>
+                    Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+            <div class="gridItem">
                 <div class="foto">
                     <img src="img/entrada5.jpg" alt="Foto en un peñón">
                 </div>
                 <div class="entrada item2">
-                  <h4>Titulo5</h4>
-                  Perspiciatis repellat, debitis quisquam mollitia laboriosam, ducimus sapiente esse in sequi vitae reiciendis, rem ipsum alias saepe. Maiores possimus neque, praesentium eveniet.
+                    <h4>Titulo5</h4>
+                    Perspiciatis repellat, debitis quisquam mollitia laboriosam, ducimus sapiente esse in sequi vitae reiciendis, rem ipsum alias saepe. Maiores possimus neque, praesentium eveniet.
                 </div>
-                </div>
+            </div>
 
         </div>
 
 
 
-    </div>  
-<!--Pie de pagina-->
-      <footer class="footer-sitio">
+    </div>
+    <!--Pie de pagina-->
+    <footer class="footer-sitio">
         <div class="contenedor">
-          <section class="nosotros">
-            <h2>NOSOTROS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium asperiores iste, a labore alias cum fugiat, saepe dolor
-              libero nulla facilis.</p>
+            <section class="nosotros">
+                <h2>NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium asperiores iste, a labore alias cum fugiat, saepe dolor libero nulla facilis.</p>
 
-          </section>
-          <section class="menu">
-            <h2>Menú de Navegación.</h2>
-            <div>
-                <nav class="menu">
-                    <a href="#">inicio</a>
-                    <a href="#">nosotros</a>
-                    <a href="#">blog</a>
-                    <a href="#">tienda</a>
-                    <a href="#">contacto</a>
-                </nav>
-          </section>
-        </div>
-        <p class="copyright">&copy Derechos reservados 2019. - Desarrollado por: Marco Antonio Islas Durán. -</p>
-      </footer>
-
+            </section>
+            <section class="menu">
+                <h2>Menú de Navegación.</h2>
+                <div>
+                    <nav class="menu">
+                        <a href="#">inicio</a>
+                        <a href="#">nosotros</a>
+                        <a href="#">blog</a>
+                        <a href="#">tienda</a>
+                        <a href="#">contacto</a>
+                    </nav>
+            </section>
+            </div>
+            <p class="copyright">&copy Derechos reservados 2019. - Desarrollado por: Marco Antonio Islas Durán. -</p>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

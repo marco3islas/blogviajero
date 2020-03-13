@@ -1,104 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/styles.css">
-  <!--Awesome FONTS-->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!--GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Quattrocento+Sans&display=swap" rel="stylesheet">
-  <!--Jquery-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <title>Nosotros</title>
-</head>
-<body>
-  <!--cabecera-->
-  <header class="site-header contenedor">
-      <img src="img/logo.png" alt="Logotipo de Blog Viajero">
-  </header>
-  <div class="barra">
-     <a href="#nav" class="movile-menu hideMenu">
-       <span class="fas fa-bars"></span>
-      </a>
-      <nav id="nav" class="navegacion-principal contenedor">
-          <a href="index.html">inicio</a>
-          <a href="nosotros.html">nosotros</a>
-          <a href="blog.html">blog</a>
-          <a href="tienda.html">tienda</a>
-          <a href="contacto.html">contacto</a>
-      </nav>
-      <a href="">
-      <span id="#" class="fas fa-times hideMenu"></span>
-    </a>
-  </div>
-  <!--Cuerpo-->
-  <div class="contenedor">
-    <h2>Somos su mejor opción para Viajar...</h2>
 
-    <div class="slider">
-    <div>
-      <img src="img/viajar.jpg" alt="Maleta, libro, gafas y conchas de mar.">
-      <h5>Preparando mi siguiente parada.</h5></div>
-    <div>
-      <img src="img/tequila.jpg" alt="Pared con anuncio de tequila">
-      <h5>Cantina.</h5></div>
-    <div>
-      <img src="img/piramide.jpg" alt="Piramide maya">
-      <h5>Piramide y gente.</h5></div>
-    <div>
-      <img src="img/nosotros.jpg" alt="Gente saltando al agua">
-      Diversión pura.</div>
-      <div>
-        <img src="img/japan.jpg" alt="Paisaje Japón">
-        <h5>Paisaje de Japón.</h5></div>
-  </div>
-  <div>
-    <h2>Desde hace...</h2>
-    <p>
-      Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nostrum excepturi atque dolore maxime quidem aliquid, ab? At laudantium necessitatibus vel dolores voluptate, reprehenderit ullam laborum blanditiis magni maiores. Nostrum?
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolore illo nesciunt corrupti nisi consequuntur eum, commodi omnis cumque labore ipsa excepturi, deserunt repellendus facere porro libero illum esse tempore.
-    </p>
-  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Awesome FONTS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!--GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Quattrocento+Sans&display=swap" rel="stylesheet">
+    <!--Jquery-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <title>Nosotros</title>
+</head>
+
+<body>
+    <!--cabecera-->
+    <header class="site-header contenedor">
+        <img src="img/logo.png" alt="Logotipo de Blog Viajero">
+    </header>
+    <div class="barra">
+        <a class="movile-menu hideMenu">
+            <span class="fas fa-bars"></span>
+        </a>
+        <a id="esconderMenu" class="esconder">
+            <span class="fas fa-times hideMenu"></span>
+        </a>
+        <nav id="nav" class="navegacion-principal contenedor esconder">
+            <a href="index.html">inicio</a>
+            <a id="subNivel" class="subNivel" href="nosotros.html">nosotros <span class="fa fa-caret-down" aria-hidden="true"></span>
+            </a>
+            <div class="subMenu">
+                <a href="#">Mision</a>
+                <a href="#">Vision</a>
+                <a href="#">Valores</a>
+            </div>
+
+            <a id="subNivel2" class="subNivel" href="blog.html">blog <span class="fa fa-caret-down" aria-hidden="true"></span> </a>
+            <div class="subMenu2">
+                <a href="#">Consejos</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Promociones</a>
+            </div>
+            <a href="#">tienda</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+
+        <!--  <a href="#nav" class="movile-menu hideMenu">
+            <span class="fas fa-bars"></span>
+        </a>
+        <nav id="nav" class="navegacion-principal contenedor">
+            <a href="index.html">inicio</a>
+            <a href="nosotros.html">nosotros</a>
+            <a href="blog.html">blog</a>
+            <a href="tienda.html">tienda</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+        <a href="">
+            <span id="#" class="fas fa-times hideMenu"></span>
+        </a> -->
+    </div>
+    <!--Cuerpo-->
+    <div class="contenedor">
+        <h2>Somos su mejor opción para Viajar...</h2>
+
+        <div class="slider">
+            <div>
+                <img src="img/viajar.jpg" alt="Maleta, libro, gafas y conchas de mar.">
+                <h5>Preparando mi siguiente parada.</h5>
+            </div>
+            <div>
+                <img src="img/tequila.jpg" alt="Pared con anuncio de tequila">
+                <h5>Cantina.</h5>
+            </div>
+            <div>
+                <img src="img/piramide.jpg" alt="Piramide maya">
+                <h5>Piramide y gente.</h5>
+            </div>
+            <div>
+                <img src="img/nosotros.jpg" alt="Gente saltando al agua"> Diversión pura.</div>
+            <div>
+                <img src="img/japan.jpg" alt="Paisaje Japón">
+                <h5>Paisaje de Japón.</h5>
+            </div>
+        </div>
+        <div>
+            <h2>Desde hace...</h2>
+            <p>
+                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nostrum
+                excepturi atque dolore maxime quidem aliquid, ab? At laudantium necessitatibus vel dolores voluptate, reprehenderit ullam laborum blanditiis magni maiores. Nostrum?
+                <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolore illo nesciunt corrupti nisi consequuntur eum, commodi omnis cumque labore ipsa excepturi, deserunt repellendus facere porro libero illum esse tempore.
+            </p>
+        </div>
 
     </div>
-<!--Pie de pagina-->
-      <footer class="footer-sitio">
+    <!--Pie de pagina-->
+    <footer class="footer-sitio">
         <div class="contenedor">
-          <section class="nosotros">
-            <h2>NOSOTROS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium asperiores iste, a labore alias cum fugiat, saepe dolor
-              libero nulla facilis.</p>
+            <section class="nosotros">
+                <h2>NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium asperiores iste, a labore alias cum fugiat, saepe dolor libero nulla facilis.</p>
 
-          </section>
-          <section class="menu">
-            <h2>Menú de Navegación.</h2>
-            <div>
-                <nav class="menu">
-                    <a herf="#">inicio</a>
-                    <a herf="#">nosotros</a>
-                    <a herf="#">blog</a>
-                    <a herf="#">tienda</a>
-                    <a herf="#">contacto</a>
-                </nav>
-          </section>
-        </div>
-        <p class="copyright">&copy Derechos reservados 2019. - Desarrollado por: Marco Antonio Islas Durán. -</p>
-      </footer>
-      <script>
-    $(document).ready(function(){
-      $('.slider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 700
-      });
-    });
-  </script>
+            </section>
+            <section class="menu">
+                <h2>Menú de Navegación.</h2>
+                <div>
+                    <nav class="menu">
+                        <a herf="#">inicio</a>
+                        <a herf="#">nosotros</a>
+                        <a herf="#">blog</a>
+                        <a herf="#">tienda</a>
+                        <a herf="#">contacto</a>
+                    </nav>
+            </section>
+            </div>
+            <p class="copyright">&copy Derechos reservados 2019. - Desarrollado por: Marco Antonio Islas Durán. -</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

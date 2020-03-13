@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
@@ -13,95 +13,101 @@
     <!--GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Quattrocento+Sans&display=swap" rel="stylesheet">
     <meta content="">
-    <style></style>
-  </head>
-  <body>
-        <header class="site-header contenedor">
-            <img src="img/logo.png" alt="Logotipo de Blog Viajero">
-        </header>
-        <div class="barra">
-           <a href="#nav" class="movile-menu hideMenu">
-             <span class="fas fa-bars"></span>
+    <!-- jquery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <header class="site-header contenedor">
+        <img src="img/logo.png" alt="Logotipo de Blog Viajero">
+    </header>
+    <div class="barra">
+        <a class="movile-menu hideMenu">
+            <span class="fas fa-bars"></span>
+        </a>
+        <a id="esconderMenu" class="esconder">
+            <span class="fas fa-times hideMenu"></span>
+        </a>
+        <nav id="nav" class="navegacion-principal contenedor esconder">
+            <a href="index.html">inicio</a>
+            <a id="subNivel" class="subNivel" href="nosotros.html">nosotros <span class="fa fa-caret-down" aria-hidden="true"></span>
             </a>
-            <nav id="nav" class="navegacion-principal contenedor">
-                <a href="index.html">inicio</a>
-                <a href="nosotros.html">nosotros</a>
-                <a href="blog.html">blog</a>
-                <a href="tienda.html">tienda</a>
-                <a href="contacto.html">contacto</a>
-            </nav>
-            <a href="">
-            <span id="#" class="fas fa-times hideMenu"></span>
-          </a>
-        </div>
-        <div class="contenedor">
-          <main class="contenido-principal">
+            <div class="subMenu">
+                <a href="#">Mision</a>
+                <a href="#">Vision</a>
+                <a href="#">Valores</a>
+            </div>
+
+            <a id="subNivel2" class="subNivel" href="blog.html">blog <span class="fa fa-caret-down" aria-hidden="true"></span> </a>
+            <div class="subMenu2">
+                <a href="#">Consejos</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Promociones</a>
+            </div>
+            <a href="#">tienda</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+    </div>
+    <div class="contenedor">
+        <main class="contenido-principal">
             <article class="entrada">
-              <h2>Viajar a Londres</h2>
-              <img src="img/imagen_1.jpg" alt="Imagen de Londres">
-              <p>In et dui id ipsum luctus egestas et a lorem. Proin ligula leo, tristique vel
-                dignissim a, scelerisque vel tellus. Integer a magna non orci condimentum
-                suscipit. Maecenas a elit consectetur dui pulvinar eleifend. Duis mattis dolor
-                ut mauris fringilla, ut ultrices odio fermentum. Praesent tempor bibendum
-                tortor, eu faucibus nunc ullamcorper at crass. </p>
-                   <a href="#" class="boton">Más Información...</a>
+                <h2>Viajar a Londres</h2>
+                <img src="img/imagen_1.jpg" alt="Imagen de Londres">
+                <p>In et dui id ipsum luctus egestas et a lorem. Proin ligula leo, tristique vel dignissim a, scelerisque vel tellus. Integer a magna non orci condimentum suscipit. Maecenas a elit consectetur dui pulvinar eleifend. Duis mattis dolor ut mauris
+                    fringilla, ut ultrices odio fermentum. Praesent tempor bibendum tortor, eu faucibus nunc ullamcorper at crass. </p>
+                <a href="#" class="boton">Más Información...</a>
             </article>
             <article class="entrada">
                 <h2>Puente de la Torre.</h2>
                 <img src="img/imagen_2.jpg" alt="Puente de la Torre">
-                <p>In et dui id ipsum luctus egestas et a lorem. Proin ligula leo, tristique vel
-                  dignissim a, scelerisque vel tellus. Integer a magna non orci condimentum
-                  suscipit. Maecenas a elit consectetur dui pulvinar eleifend. Duis mattis dolor
-                  ut mauris fringilla, ut ultrices odio fermentum. Praesent tempor bibendum
-                  tortor, eu faucibus nunc ullamcorper at. Cras ac malesuada mauris.
-                  Vivamus.</p>
-                     <a href="#" class="boton">Más Información...</a>
-              </article>
-              <article class="entrada">
-                  <h2>Metro de Londres.</h2>
-                  <img src="img/imagen_3.jpg" alt="Imagen de Londres">
-                  <p>In et dui id ipsum luctus egestas et a lorem. Proin ligula leo, tristique vel
-                    dignissim a, scelerisque vel tellus. Integer a magna non orci condimentum
-                    suscipit. Maecenas a elit consectetur dui pulvinar eleifend. Duis mattis dolor
-                    ut mauris fringilla, ut ultrices odio fermentum. Praesent tempor bibendum
-                    tortor, eu faucibus nunc.</p>
-                       <a href="#" class="boton">Más Información...</a>
-                </article>
-          </main>
-          <aside class="sidebar">
+                <p>In et dui id ipsum luctus egestas et a lorem. Proin ligula leo, tristique vel dignissim a, scelerisque vel tellus. Integer a magna non orci condimentum suscipit. Maecenas a elit consectetur dui pulvinar eleifend. Duis mattis dolor ut mauris
+                    fringilla, ut ultrices odio fermentum. Praesent tempor bibendum tortor, eu faucibus nunc ullamcorper at. Cras ac malesuada mauris. Vivamus.
+                </p>
+                <a href="#" class="boton">Más Información...</a>
+            </article>
+            <article class="entrada">
+                <h2>Metro de Londres.</h2>
+                <img src="img/imagen_3.jpg" alt="Imagen de Londres">
+                <p>In et dui id ipsum luctus egestas et a lorem. Proin ligula leo, tristique vel dignissim a, scelerisque vel tellus. Integer a magna non orci condimentum suscipit. Maecenas a elit consectetur dui pulvinar eleifend. Duis mattis dolor ut mauris
+                    fringilla, ut ultrices odio fermentum. Praesent tempor bibendum tortor, eu faucibus nunc.</p>
+                <a href="#" class="boton">Más Información...</a>
+            </article>
+        </main>
+        <aside class="sidebar">
             <section class="proximas-entradas">
-              <h2>Otros Post.</h2>
-              <ul>
-                <li><a href="#">Entrada 1</a></li>
-                <li><a href="#">Entrada 2</a></li>
-                <li><a href="#">Entrada 3</a></li>
-                <li><a href="#">Entrada 4</a></li>
-              </ul>
+                <h2>Otros Post.</h2>
+                <ul>
+                    <li><a href="#">Entrada 1</a></li>
+                    <li><a href="#">Entrada 2</a></li>
+                    <li><a href="#">Entrada 3</a></li>
+                    <li><a href="#">Entrada 4</a></li>
+                </ul>
             </section>
-          </aside>
-        </div> <!--Cierre del CONTENEDOR -->
-        <footer class="footer-sitio">
-          <div class="contenedor">
+        </aside>
+    </div>
+    <!--Cierre del CONTENEDOR -->
+    <footer class="footer-sitio">
+        <div class="contenedor">
             <section class="nosotros">
-              <h2>NOSOTROS</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium asperiores iste, a labore alias cum fugiat, saepe dolor
-                libero nulla facilis.</p>
+                <h2>NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium asperiores iste, a labore alias cum fugiat, saepe dolor libero nulla facilis.</p>
 
             </section>
             <section class="menu">
-              <h2>Menú de Navegación.</h2>
-              <div>
-                  <nav class="menu">
-                      <a herf="#">inicio</a>
-                      <a herf="#">nosotros</a>
-                      <a herf="#">blog</a>
-                      <a herf="#">tienda</a>
-                      <a herf="#">contacto</a>
-                  </nav>
+                <h2>Menú de Navegación.</h2>
+                <div>
+                    <nav class="menu">
+                        <a herf="#">inicio</a>
+                        <a herf="#">nosotros</a>
+                        <a herf="#">blog</a>
+                        <a herf="#">tienda</a>
+                        <a herf="#">contacto</a>
+                    </nav>
             </section>
-          </div>
-          <p class="copyright">&copy Derechos reservados 2019. - Desarrollado por: Marco Antonio Islas Durán. -</p>
-        </footer>
-  </body>
+            </div>
+            <p class="copyright">&copy Derechos reservados 2019. - Desarrollado por: Marco Antonio Islas Durán. -</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
