@@ -85,7 +85,7 @@ nav {
 @media only screen and ( min-width: 768px) {
     .barra {
         flex-direction: row;
-        height: 100px;
+        height: 60px;
         align-items: center;
     }
 }
