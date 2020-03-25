@@ -3,21 +3,21 @@ $(function() {
 
 
     /* Remover y mostrar movil menu y esconder menu */
-    $('.movile-menu').on('click', function(e) {
-        $(this).addClass('esconder'),
-            $('#nav').removeClass('esconder'),
-            $('#esconderMenu').removeClass('esconder');
+    $('.movile-menu').on('click', function() {
+        $(this).addClass('esconder');
+        $('nav').slideDown();
+        $('#esconderMenu').removeClass('esconder');
     });
 
-    $('#esconderMenu').on('click', function(e) {
+    $('#esconderMenu').on('click', function() {
         $(this).addClass('esconder'),
-            $('#nav').addClass('esconder'),
+            $('nav').slideUp(),
             $('.movile-menu').removeClass('esconder');
     })
 
 
 
-    $('#nav a').on('click', function(e) {
+    $('.nav a').on('click', function() {
         $(this).addClass('activo');
     })
 
@@ -32,21 +32,7 @@ $(function() {
         $(this).animate({ 'width': '350px' });
     }
 
-    $('#subNivel').on('click', function() {
-        $('.subMenu').slideDown("slow");
-    })
-    $('.subMenu').on('click', function() {
-        $(this).slideUp('fast');
-    })
-    $('#subNivel2').on('mouseover', function() {
-        $('.subMenu2').slideDown("slow");
-    })
-    $('.subMenu2').on('click', function() {
-        $(this).slideUp('fast');
-    })
-    $('.subNivel').on('click', function(e) {
-        $(this).addClass('activo');
-    })
+
 
     /*Link activo*/
     var linkActivo = location.href;
@@ -69,13 +55,6 @@ $(function() {
             break;
     }
 
-    //
-    // ─── NOSOTROS SLIDER ────────────────────────────────────────────────────────────
-    //
-    $('.slider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 800
-    });
+
 
 });
